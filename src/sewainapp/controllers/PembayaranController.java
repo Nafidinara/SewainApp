@@ -6,42 +6,35 @@ package sewainapp.controllers;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import sewainapp.models.domains.Penyewaan;
+import sewainapp.models.domains.Pembayaran;
 import sewainapp.services.DatabaseService;
 
 /**
  *
  * @author nafidinara
  */
-public class PenyewaanController {
+public class PembayaranController {
+    protected final String tableName = "pembayaran";
     
-    protected final String tableName = "penyewaan";
-    
-    public void create(Penyewaan penyewaan) throws SQLException{
+    public void create(Pembayaran pembayaran) throws SQLException{
         DatabaseService db = new DatabaseService();
-        String sqlUpdate = "INSERT INTO "+tableName+" (tglSewa, tglKembali, lamaSewa, status, kendaraan_id, pembayaran_id, user_id) VALUES ('"
-                + "" + penyewaan.getTglSewa() + "',"
-                + "'" + penyewaan.getTglKembali() + "',"
-                + "'" + penyewaan.getLamaSewa() + "',"
-                + "'" + penyewaan.isStatus() + "',"
-                + "'" + penyewaan.getKendaraan().getId() + "',"
-                + "'" + penyewaan.getPembayaran().getId() + "',"
-                + "'" + penyewaan.getPenyewa().getId() + "')";
+        String sqlUpdate = "INSERT INTO "+tableName+" (metode, jumlah, status, denda) VALUES ('"
+                + "" + pembayaran.getMetodePembayaran() + "',"
+                + "'" + pembayaran.getJumlahPembayaran() + "',"
+                + "'" + pembayaran.isStatusPembayaran() + "',"
+                + "'" + pembayaran.getDenda() + "')";
         
         db.executeUpdate(sqlUpdate);
     }
     
-    public void update(Penyewaan penyewaan) throws SQLException{
+    public void update(Pembayaran pembayaran) throws SQLException{
         DatabaseService db = new DatabaseService();
         String sqlUpdate = "UPDATE "+tableName+" SET "
-                + "tglSewa='" + penyewaan.getTglSewa() + "',"
-                + "tglKembali='" + penyewaan.getTglKembali() + "',"
-                + "lamaSewa='" + penyewaan.getLamaSewa() + "'"
-                + "status='" + penyewaan.isStatus() + "'"
-                + "kendaraan_id='" + penyewaan.getKendaraan().getId() + "'"
-                + "pembayaran_id='" + penyewaan.getPembayaran().getId() + "'"
-                + "user_id='" + penyewaan.getPenyewa().getId() + "'"
-                + "WHERE id='" + penyewaan.getId() + "'";
+                + "tglSewa='" + pembayaran.getMetodePembayaran() + "',"
+                + "tglKembali='" + pembayaran.getJumlahPembayaran() + "',"
+                + "lamaSewa='" + pembayaran.isStatusPembayaran() + "'"
+                + "status='" + pembayaran.getDenda() + "'"
+                + "WHERE id='" + pembayaran.getId() + "'";
         
         db.executeUpdate(sqlUpdate);
     }
@@ -70,5 +63,4 @@ public class PenyewaanController {
         
         db.executeUpdate(sqlUpdate);
     }
-    
 }
