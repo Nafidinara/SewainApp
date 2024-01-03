@@ -36,7 +36,7 @@ public class HomePage extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        sewaTesla = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
@@ -44,50 +44,50 @@ public class HomePage extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        sewaFerrari = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        sewaKawazaki = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel14 = new javax.swing.JLabel();
-        jPanel10 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
+        panelDarat = new javax.swing.JPanel();
+        lainDarat = new javax.swing.JLabel();
+        panelAir = new javax.swing.JPanel();
+        lainAir = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        sewaCruiser = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        sewaJetSki = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        sewaYacht = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jPanel14 = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
+        panelUdara = new javax.swing.JPanel();
+        lainUdara = new javax.swing.JLabel();
         jPanel15 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
+        sewaPrivateJet = new javax.swing.JButton();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
+        sewaJet = new javax.swing.JButton();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         jLabel34 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
+        sewaHeli = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -131,10 +131,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/cars05.png"))); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(86, 211, 100));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Sewa");
+        sewaTesla.setBackground(new java.awt.Color(86, 211, 100));
+        sewaTesla.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaTesla.setForeground(new java.awt.Color(255, 255, 255));
+        sewaTesla.setText("Sewa");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setText("Tesla Model X");
@@ -153,7 +153,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton1))
+                        .addComponent(sewaTesla))
                     .addComponent(jLabel4))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
@@ -168,7 +168,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(sewaTesla)
                     .addComponent(jLabel5))
                 .addGap(14, 14, 14))
         );
@@ -208,10 +208,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/ferrari.png"))); // NOI18N
 
-        jButton2.setBackground(new java.awt.Color(86, 211, 100));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Sewa");
+        sewaFerrari.setBackground(new java.awt.Color(86, 211, 100));
+        sewaFerrari.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaFerrari.setForeground(new java.awt.Color(255, 255, 255));
+        sewaFerrari.setText("Sewa");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel9.setText("Ferrari La Ferr");
@@ -231,7 +231,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)))
+                        .addComponent(sewaFerrari)))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -241,7 +241,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
+                    .addComponent(sewaFerrari)
                     .addComponent(jLabel10))
                 .addGap(14, 14, 14))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
@@ -254,10 +254,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/kawasaki.png"))); // NOI18N
 
-        jButton3.setBackground(new java.awt.Color(86, 211, 100));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Sewa");
+        sewaKawazaki.setBackground(new java.awt.Color(86, 211, 100));
+        sewaKawazaki.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaKawazaki.setForeground(new java.awt.Color(255, 255, 255));
+        sewaKawazaki.setText("Sewa");
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel12.setText("Kawazaki RR");
@@ -277,7 +277,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)))
+                        .addComponent(sewaKawazaki)))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -287,7 +287,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
+                    .addComponent(sewaKawazaki)
                     .addComponent(jLabel13))
                 .addGap(14, 14, 14))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
@@ -296,49 +296,59 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        panelDarat.setBackground(new java.awt.Color(255, 255, 255));
+        panelDarat.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        panelDarat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelDaratMouseClicked(evt);
+            }
+        });
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel14.setText("Lainnya ...");
+        lainDarat.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lainDarat.setText("Lainnya ...");
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelDaratLayout = new javax.swing.GroupLayout(panelDarat);
+        panelDarat.setLayout(panelDaratLayout);
+        panelDaratLayout.setHorizontalGroup(
+            panelDaratLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelDaratLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel14)
+                .addComponent(lainDarat)
                 .addContainerGap(30, Short.MAX_VALUE))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        panelDaratLayout.setVerticalGroup(
+            panelDaratLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelDaratLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(jLabel14)
+                .addComponent(lainDarat)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        panelAir.setBackground(new java.awt.Color(255, 255, 255));
+        panelAir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        panelAir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelAirMouseClicked(evt);
+            }
+        });
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel15.setText("Lainnya ...");
+        lainAir.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lainAir.setText("Lainnya ...");
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelAirLayout = new javax.swing.GroupLayout(panelAir);
+        panelAir.setLayout(panelAirLayout);
+        panelAirLayout.setHorizontalGroup(
+            panelAirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelAirLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel15)
+                .addComponent(lainAir)
                 .addContainerGap(30, Short.MAX_VALUE))
         );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
+        panelAirLayout.setVerticalGroup(
+            panelAirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelAirLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(jLabel15)
+                .addComponent(lainAir)
                 .addContainerGap(37, Short.MAX_VALUE))
         );
 
@@ -347,10 +357,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/cruiser.png"))); // NOI18N
 
-        jButton4.setBackground(new java.awt.Color(86, 211, 100));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Sewa");
+        sewaCruiser.setBackground(new java.awt.Color(86, 211, 100));
+        sewaCruiser.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaCruiser.setForeground(new java.awt.Color(255, 255, 255));
+        sewaCruiser.setText("Sewa");
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel17.setText("Cruiser Big");
@@ -370,7 +380,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4)))
+                        .addComponent(sewaCruiser)))
                 .addGap(23, 23, 23))
         );
         jPanel11Layout.setVerticalGroup(
@@ -385,7 +395,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton4)
+                            .addComponent(sewaCruiser)
                             .addComponent(jLabel18))))
                 .addGap(14, 14, 14))
         );
@@ -395,10 +405,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/jetski.png"))); // NOI18N
 
-        jButton5.setBackground(new java.awt.Color(86, 211, 100));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Sewa");
+        sewaJetSki.setBackground(new java.awt.Color(86, 211, 100));
+        sewaJetSki.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaJetSki.setForeground(new java.awt.Color(255, 255, 255));
+        sewaJetSki.setText("Sewa");
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel20.setText("JetSki Titan");
@@ -417,7 +427,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel12Layout.createSequentialGroup()
                         .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5))
+                        .addComponent(sewaJetSki))
                     .addComponent(jLabel20))
                 .addGap(23, 23, 23))
         );
@@ -430,7 +440,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jLabel20)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton5)
+                            .addComponent(sewaJetSki)
                             .addComponent(jLabel21))
                         .addGap(14, 14, 14))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
@@ -443,10 +453,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/yacht.png"))); // NOI18N
 
-        jButton6.setBackground(new java.awt.Color(86, 211, 100));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Sewa");
+        sewaYacht.setBackground(new java.awt.Color(86, 211, 100));
+        sewaYacht.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaYacht.setForeground(new java.awt.Color(255, 255, 255));
+        sewaYacht.setText("Sewa");
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel23.setText("Dream Yacht");
@@ -465,7 +475,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel13Layout.createSequentialGroup()
                         .addComponent(jLabel24)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton6))
+                        .addComponent(sewaYacht))
                     .addComponent(jLabel23))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
@@ -480,7 +490,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel23)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
+                    .addComponent(sewaYacht)
                     .addComponent(jLabel24))
                 .addGap(14, 14, 14))
         );
@@ -491,26 +501,31 @@ public class HomePage extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel26.setText("Udara");
 
-        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        panelUdara.setBackground(new java.awt.Color(255, 255, 255));
+        panelUdara.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        panelUdara.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelUdaraMouseClicked(evt);
+            }
+        });
 
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel27.setText("Lainnya ...");
+        lainUdara.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lainUdara.setText("Lainnya ...");
 
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelUdaraLayout = new javax.swing.GroupLayout(panelUdara);
+        panelUdara.setLayout(panelUdaraLayout);
+        panelUdaraLayout.setHorizontalGroup(
+            panelUdaraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelUdaraLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel27)
+                .addComponent(lainUdara)
                 .addContainerGap(30, Short.MAX_VALUE))
         );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
+        panelUdaraLayout.setVerticalGroup(
+            panelUdaraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelUdaraLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(jLabel27)
+                .addComponent(lainUdara)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -519,10 +534,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/pesawat.png"))); // NOI18N
 
-        jButton7.setBackground(new java.awt.Color(86, 211, 100));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Sewa");
+        sewaPrivateJet.setBackground(new java.awt.Color(86, 211, 100));
+        sewaPrivateJet.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaPrivateJet.setForeground(new java.awt.Color(255, 255, 255));
+        sewaPrivateJet.setText("Sewa");
 
         jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel29.setText("Private Jet");
@@ -541,7 +556,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel15Layout.createSequentialGroup()
                         .addComponent(jLabel30)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton7))
+                        .addComponent(sewaPrivateJet))
                     .addComponent(jLabel29))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
@@ -556,7 +571,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel29)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
+                    .addComponent(sewaPrivateJet)
                     .addComponent(jLabel30))
                 .addGap(14, 14, 14))
         );
@@ -566,10 +581,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/f16.png"))); // NOI18N
 
-        jButton8.setBackground(new java.awt.Color(86, 211, 100));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Sewa");
+        sewaJet.setBackground(new java.awt.Color(86, 211, 100));
+        sewaJet.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaJet.setForeground(new java.awt.Color(255, 255, 255));
+        sewaJet.setText("Sewa");
 
         jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel32.setText("Jet F-16");
@@ -589,7 +604,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel16Layout.createSequentialGroup()
                         .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton8)))
+                        .addComponent(sewaJet)))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
         jPanel16Layout.setVerticalGroup(
@@ -604,7 +619,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jLabel32)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                         .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton8)
+                            .addComponent(sewaJet)
                             .addComponent(jLabel33))))
                 .addGap(14, 14, 14))
         );
@@ -614,10 +629,10 @@ public class HomePage extends javax.swing.JFrame {
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sewainapp/asset/heli.png"))); // NOI18N
 
-        jButton9.setBackground(new java.awt.Color(86, 211, 100));
-        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Sewa");
+        sewaHeli.setBackground(new java.awt.Color(86, 211, 100));
+        sewaHeli.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sewaHeli.setForeground(new java.awt.Color(255, 255, 255));
+        sewaHeli.setText("Sewa");
 
         jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel35.setText("Helicopter");
@@ -636,7 +651,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton9))
+                        .addComponent(sewaHeli))
                     .addComponent(jLabel35))
                 .addGap(46, 46, 46))
         );
@@ -650,7 +665,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jLabel35)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton9)
+                            .addComponent(sewaHeli)
                             .addComponent(jLabel36))))
                 .addGap(14, 14, 14))
         );
@@ -670,7 +685,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(panelAir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -678,7 +693,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(panelUdara, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel1)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -687,7 +702,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(panelDarat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel25)
                     .addComponent(jLabel26))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -704,16 +719,15 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(panelDarat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(17, 17, 17)
                 .addComponent(jLabel25)
                 .addGap(20, 20, 20)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(panelAir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(23, 23, 23)
                 .addComponent(jLabel26)
                 .addGap(20, 20, 20)
@@ -722,7 +736,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(panelUdara, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -797,6 +811,27 @@ public class HomePage extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void panelDaratMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelDaratMouseClicked
+        // TODO add your handling code here:
+        ListDarat editPopup = new ListDarat();
+        editPopup.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_panelDaratMouseClicked
+
+    private void panelAirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelAirMouseClicked
+        // TODO add your handling code here:
+        ListAir editPopup = new ListAir();
+        editPopup.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_panelAirMouseClicked
+
+    private void panelUdaraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelUdaraMouseClicked
+        // TODO add your handling code here:
+        ListUdara editPopup = new ListUdara();
+        editPopup.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_panelUdaraMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -839,22 +874,11 @@ public class HomePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -867,7 +891,6 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
@@ -885,11 +908,9 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
@@ -900,9 +921,23 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lainAir;
+    private javax.swing.JLabel lainDarat;
+    private javax.swing.JLabel lainUdara;
+    private javax.swing.JPanel panelAir;
+    private javax.swing.JPanel panelDarat;
+    private javax.swing.JPanel panelUdara;
+    private javax.swing.JButton sewaCruiser;
+    private javax.swing.JButton sewaFerrari;
+    private javax.swing.JButton sewaHeli;
+    private javax.swing.JButton sewaJet;
+    private javax.swing.JButton sewaJetSki;
+    private javax.swing.JButton sewaKawazaki;
+    private javax.swing.JButton sewaPrivateJet;
+    private javax.swing.JButton sewaTesla;
+    private javax.swing.JButton sewaYacht;
     // End of variables declaration//GEN-END:variables
 }
