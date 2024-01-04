@@ -31,13 +31,13 @@ public class HomePage extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        TabHome = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         sewaTesla = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        LabelTesla = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
@@ -45,12 +45,12 @@ public class HomePage extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         sewaFerrari = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        LabelFerari = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         sewaKawazaki = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
+        LabelKawazaki = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         panelDarat = new javax.swing.JPanel();
         lainDarat = new javax.swing.JLabel();
@@ -59,17 +59,17 @@ public class HomePage extends javax.swing.JFrame {
         jPanel11 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
         sewaCruiser = new javax.swing.JButton();
-        jLabel17 = new javax.swing.JLabel();
+        LabelCruiser = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         sewaJetSki = new javax.swing.JButton();
-        jLabel20 = new javax.swing.JLabel();
+        LabelJetski = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         sewaYacht = new javax.swing.JButton();
-        jLabel23 = new javax.swing.JLabel();
+        LabelDream = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -90,9 +90,9 @@ public class HomePage extends javax.swing.JFrame {
         sewaHeli = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        TabRiwayat = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        TableRiwayat = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(5, 4, 4));
@@ -141,8 +141,8 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setText("Tesla Model X");
+        LabelTesla.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LabelTesla.setText("Tesla Model X");
 
         jLabel5.setText("Rp 200000/Hari");
 
@@ -159,7 +159,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
                         .addComponent(sewaTesla))
-                    .addComponent(jLabel4))
+                    .addComponent(LabelTesla))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -170,7 +170,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel4)
+                .addComponent(LabelTesla)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sewaTesla)
@@ -223,8 +223,8 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel9.setText("Ferrari La Ferr");
+        LabelFerari.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LabelFerari.setText("Ferrari La Ferr");
 
         jLabel10.setText("Rp 1000000/Hari");
 
@@ -237,18 +237,18 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel9)
+                    .addComponent(LabelFerari)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                         .addComponent(sewaFerrari)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel9)
+                .addComponent(LabelFerari)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sewaFerrari)
@@ -274,8 +274,8 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel12.setText("Kawazaki RR");
+        LabelKawazaki.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LabelKawazaki.setText("Kawazaki RR");
 
         jLabel13.setText("Rp 300000/Hari");
 
@@ -288,7 +288,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel11)
                 .addGap(4, 4, 4)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel12)
+                    .addComponent(LabelKawazaki)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -299,7 +299,7 @@ public class HomePage extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                 .addGap(0, 16, Short.MAX_VALUE)
-                .addComponent(jLabel12)
+                .addComponent(LabelKawazaki)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sewaKawazaki)
@@ -382,8 +382,8 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel17.setText("Cruiser Big");
+        LabelCruiser.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LabelCruiser.setText("Cruiser Big");
 
         jLabel18.setText("Rp 300000/Hari");
 
@@ -396,7 +396,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(jLabel16)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel17)
+                    .addComponent(LabelCruiser)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -412,7 +412,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel17)
+                        .addComponent(LabelCruiser)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(sewaCruiser)
@@ -435,8 +435,8 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel20.setText("JetSki Titan");
+        LabelJetski.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LabelJetski.setText("JetSki Titan");
 
         jLabel21.setText("Rp 3000000/Hari");
 
@@ -447,13 +447,17 @@ public class HomePage extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel20)
-                    .addComponent(sewaJetSki))
-                .addGap(23, 23, 23))
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(sewaJetSki)
+                        .addGap(23, 23, 23))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(LabelJetski)
+                        .addGap(37, 37, 37))))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -461,7 +465,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                        .addComponent(jLabel20)
+                        .addComponent(LabelJetski)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(sewaJetSki)
@@ -487,8 +491,8 @@ public class HomePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel23.setText("Dream Yacht");
+        LabelDream.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LabelDream.setText("Dream Yacht");
 
         jLabel24.setText("Rp 500000/Hari");
 
@@ -505,7 +509,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jLabel24)
                         .addGap(18, 18, 18)
                         .addComponent(sewaYacht))
-                    .addComponent(jLabel23))
+                    .addComponent(LabelDream))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel13Layout.setVerticalGroup(
@@ -516,7 +520,7 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel23)
+                .addComponent(LabelDream)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sewaYacht)
@@ -742,7 +746,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -784,11 +788,11 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Home", jPanel2);
+        TabHome.addTab("Home", jPanel2);
 
-        jPanel3.setBackground(new java.awt.Color(249, 249, 249));
+        TabRiwayat.setBackground(new java.awt.Color(249, 249, 249));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        TableRiwayat.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -799,26 +803,26 @@ public class HomePage extends javax.swing.JFrame {
                 "Nama", "Harga", "Status", "Tanggal Kembali"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(TableRiwayat);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout TabRiwayatLayout = new javax.swing.GroupLayout(TabRiwayat);
+        TabRiwayat.setLayout(TabRiwayatLayout);
+        TabRiwayatLayout.setHorizontalGroup(
+            TabRiwayatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TabRiwayatLayout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1190, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(51, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        TabRiwayatLayout.setVerticalGroup(
+            TabRiwayatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TabRiwayatLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(111, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Riwayat", jPanel3);
+        TabHome.addTab("Riwayat", TabRiwayat);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -827,7 +831,7 @@ public class HomePage extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTabbedPane1))
+                    .addComponent(TabHome))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -835,7 +839,7 @@ public class HomePage extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jTabbedPane1)
+                .addComponent(TabHome)
                 .addContainerGap())
         );
 
@@ -954,20 +958,25 @@ public class HomePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabelCruiser;
+    private javax.swing.JLabel LabelDream;
+    private javax.swing.JLabel LabelFerari;
+    private javax.swing.JLabel LabelJetski;
+    private javax.swing.JLabel LabelKawazaki;
+    private javax.swing.JLabel LabelTesla;
+    private javax.swing.JTabbedPane TabHome;
+    private javax.swing.JPanel TabRiwayat;
+    private javax.swing.JTable TableRiwayat;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
@@ -981,12 +990,10 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -995,15 +1002,12 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel lainAir;
     private javax.swing.JLabel lainDarat;
     private javax.swing.JLabel lainUdara;
