@@ -90,7 +90,7 @@ public class Penyewaan extends javax.swing.JFrame {
             }
         });
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel15.setText("Tanggal Penyewaan");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -190,7 +190,7 @@ public class Penyewaan extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(jLabel6)
                     .addComponent(jLabel14))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 365, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -220,7 +220,7 @@ public class Penyewaan extends javax.swing.JFrame {
                         .addComponent(kembali)
                         .addGap(28, 28, 28)
                         .addComponent(jLabel1)
-                        .addGap(0, 286, Short.MAX_VALUE)))
+                        .addGap(0, 298, Short.MAX_VALUE)))
                 .addGap(23, 23, 23))
         );
         jPanel2Layout.setVerticalGroup(
@@ -259,6 +259,9 @@ public class Penyewaan extends javax.swing.JFrame {
 
     private void bayarPenyewaanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarPenyewaanActionPerformed
         // TODO add your handling code here:
+        Pembayaran pay = new Pembayaran();
+        pay.setVisible(true);
+        dispose();
     }//GEN-LAST:event_bayarPenyewaanActionPerformed
 
     private void kembaliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kembaliMouseClicked
