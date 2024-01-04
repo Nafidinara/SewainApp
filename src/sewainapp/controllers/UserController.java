@@ -17,15 +17,8 @@ import java.sql.ResultSet;
 public class UserController {
     public void register(User user) throws SQLException{
         DatabaseService db = new DatabaseService();
-        String sqlUpdate = "INSERT INTO user (nama, umur, nohp, email, username, password, role) VALUES ('"
-                + "" + user.getNama() + "',"
-                + "'" + user.getUmur() + "',"
-                + "'" + user.getNohp() + "',"
-                + "'" + user.getEmail() + "',"
-                + "'" + user.getUsername() + "',"
-                + "'" + BCrypt.withDefaults().hashToString(12, user.getPassword().toCharArray()) + "',"
-                + "'" + user.getRole() + "')";
-        
+        String sqlUpdate = String.format("INSERT INTO user (nama, umur, nohp, email, username, password, role) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s')", user.getNama(), user.getUmur(), user.getNohp(), user.getEmail(), user.getUsername(), BCrypt.withDefaults().hashToString(12, user.getPassword().toCharArray()), user.getRole());
+
         db.executeUpdate(sqlUpdate);
     }
     
