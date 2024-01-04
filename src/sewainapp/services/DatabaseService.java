@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 public class DatabaseService {
     static final String DB_URL = "jdbc:mysql://localhost:3306/db_tubes";
     static final String DB_USER = "root";
-    static final String DB_PASS = "afara123";
+    static final String DB_PASS = "ichsan123";
     static Connection conn;
     static Statement stmt;
     static ResultSet rs;

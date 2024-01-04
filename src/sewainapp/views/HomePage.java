@@ -135,11 +135,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaTesla.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaTesla.setForeground(new java.awt.Color(255, 255, 255));
         sewaTesla.setText("Sewa");
+        sewaTesla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaTeslaActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setText("Tesla Model X");
 
-        jLabel5.setText("Rp 500K/Hari");
+        jLabel5.setText("Rp 200000/Hari");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -155,7 +160,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(sewaTesla))
                     .addComponent(jLabel4))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,11 +217,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaFerrari.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaFerrari.setForeground(new java.awt.Color(255, 255, 255));
         sewaFerrari.setText("Sewa");
+        sewaFerrari.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaFerrariActionPerformed(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel9.setText("Ferrari La Ferr");
 
-        jLabel10.setText("Rp 1000K/Hari");
+        jLabel10.setText("Rp 1000000/Hari");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -225,14 +235,14 @@ public class HomePage extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel8)
-                .addGap(4, 4, 4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel9)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(sewaFerrari)))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,11 +268,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaKawazaki.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaKawazaki.setForeground(new java.awt.Color(255, 255, 255));
         sewaKawazaki.setText("Sewa");
+        sewaKawazaki.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaKawazakiActionPerformed(evt);
+            }
+        });
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel12.setText("Kawazaki RR");
 
-        jLabel13.setText("Rp 300K/Hari");
+        jLabel13.setText("Rp 300000/Hari");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -361,11 +376,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaCruiser.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaCruiser.setForeground(new java.awt.Color(255, 255, 255));
         sewaCruiser.setText("Sewa");
+        sewaCruiser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaCruiserActionPerformed(evt);
+            }
+        });
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel17.setText("Cruiser Big");
 
-        jLabel18.setText("Rp 300K/Hari");
+        jLabel18.setText("Rp 300000/Hari");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -409,11 +429,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaJetSki.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaJetSki.setForeground(new java.awt.Color(255, 255, 255));
         sewaJetSki.setText("Sewa");
+        sewaJetSki.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaJetSkiActionPerformed(evt);
+            }
+        });
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel20.setText("JetSki Titan");
 
-        jLabel21.setText("Rp 300K/Hari");
+        jLabel21.setText("Rp 3000000/Hari");
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -423,12 +448,11 @@ public class HomePage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(sewaJetSki))
-                    .addComponent(jLabel20))
+                    .addComponent(jLabel20)
+                    .addComponent(sewaJetSki))
                 .addGap(23, 23, 23))
         );
         jPanel12Layout.setVerticalGroup(
@@ -457,11 +481,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaYacht.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaYacht.setForeground(new java.awt.Color(255, 255, 255));
         sewaYacht.setText("Sewa");
+        sewaYacht.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaYachtActionPerformed(evt);
+            }
+        });
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel23.setText("Dream Yacht");
 
-        jLabel24.setText("Rp 500K/Hari");
+        jLabel24.setText("Rp 500000/Hari");
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -538,11 +567,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaPrivateJet.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaPrivateJet.setForeground(new java.awt.Color(255, 255, 255));
         sewaPrivateJet.setText("Sewa");
+        sewaPrivateJet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaPrivateJetActionPerformed(evt);
+            }
+        });
 
         jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel29.setText("Private Jet");
 
-        jLabel30.setText("Rp 500K/Hari");
+        jLabel30.setText("Rp 500000/Hari");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -585,11 +619,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaJet.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaJet.setForeground(new java.awt.Color(255, 255, 255));
         sewaJet.setText("Sewa");
+        sewaJet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaJetActionPerformed(evt);
+            }
+        });
 
         jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel32.setText("Jet F-16");
 
-        jLabel33.setText("Rp 300K/Hari");
+        jLabel33.setText("Rp 300000/Hari");
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
@@ -633,11 +672,16 @@ public class HomePage extends javax.swing.JFrame {
         sewaHeli.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         sewaHeli.setForeground(new java.awt.Color(255, 255, 255));
         sewaHeli.setText("Sewa");
+        sewaHeli.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sewaHeliActionPerformed(evt);
+            }
+        });
 
         jLabel35.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel35.setText("Helicopter");
 
-        jLabel36.setText("Rp 1000K/Hari");
+        jLabel36.setText("Rp 1000000/Hari");
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -698,7 +742,7 @@ public class HomePage extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -831,6 +875,42 @@ public class HomePage extends javax.swing.JFrame {
         editPopup.setVisible(true);
         dispose();
     }//GEN-LAST:event_panelUdaraMouseClicked
+
+    private void sewaTeslaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaTeslaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaTeslaActionPerformed
+
+    private void sewaFerrariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaFerrariActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaFerrariActionPerformed
+
+    private void sewaKawazakiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaKawazakiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaKawazakiActionPerformed
+
+    private void sewaYachtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaYachtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaYachtActionPerformed
+
+    private void sewaJetSkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetSkiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaJetSkiActionPerformed
+
+    private void sewaCruiserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaCruiserActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaCruiserActionPerformed
+
+    private void sewaPrivateJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaPrivateJetActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaPrivateJetActionPerformed
+
+    private void sewaHeliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaHeliActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaHeliActionPerformed
+
+    private void sewaJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sewaJetActionPerformed
 
     /**
      * @param args the command line arguments
