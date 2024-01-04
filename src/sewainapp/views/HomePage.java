@@ -882,38 +882,65 @@ public class HomePage extends javax.swing.JFrame {
 
     private void sewaTeslaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaTeslaActionPerformed
         // TODO add your handling code here:
+        Penyewaan Tsl = new Penyewaan();
+        Tsl.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaTeslaActionPerformed
 
     private void sewaFerrariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaFerrariActionPerformed
         // TODO add your handling code here:
+        Penyewaan Fer = new Penyewaan();
+        Fer.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaFerrariActionPerformed
 
     private void sewaKawazakiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaKawazakiActionPerformed
         // TODO add your handling code here:
+        Penyewaan Kwz = new Penyewaan();
+        Kwz.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaKawazakiActionPerformed
 
     private void sewaYachtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaYachtActionPerformed
         // TODO add your handling code here:
+        Penyewaan Yach = new Penyewaan();
+        Yach.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaYachtActionPerformed
 
     private void sewaJetSkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetSkiActionPerformed
         // TODO add your handling code here:
+        Penyewaan Jet = new Penyewaan();
+        Jet.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaJetSkiActionPerformed
 
     private void sewaCruiserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaCruiserActionPerformed
         // TODO add your handling code here:
+        Penyewaan Crui = new Penyewaan();
+        Crui.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaCruiserActionPerformed
 
     private void sewaPrivateJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaPrivateJetActionPerformed
         // TODO add your handling code here:
+        Penyewaan Pri = new Penyewaan();
+        Pri.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaPrivateJetActionPerformed
 
     private void sewaHeliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaHeliActionPerformed
         // TODO add your handling code here:
+        Penyewaan Pri = new Penyewaan();
+        Pri.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaHeliActionPerformed
 
     private void sewaJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetActionPerformed
         // TODO add your handling code here:
+        Penyewaan Jet1 = new Penyewaan();
+        Jet1.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaJetActionPerformed
 
     /**
