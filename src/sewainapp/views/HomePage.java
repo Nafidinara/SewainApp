@@ -876,42 +876,6 @@ public class HomePage extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_panelUdaraMouseClicked
 
-    private void sewaTeslaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaTeslaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaTeslaActionPerformed
-
-    private void sewaFerrariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaFerrariActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaFerrariActionPerformed
-
-    private void sewaKawazakiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaKawazakiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaKawazakiActionPerformed
-
-    private void sewaYachtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaYachtActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaYachtActionPerformed
-
-    private void sewaJetSkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetSkiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaJetSkiActionPerformed
-
-    private void sewaCruiserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaCruiserActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaCruiserActionPerformed
-
-    private void sewaPrivateJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaPrivateJetActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaPrivateJetActionPerformed
-
-    private void sewaHeliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaHeliActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaHeliActionPerformed
-
-    private void sewaJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_sewaJetActionPerformed
-
     /**
      * @param args the command line arguments
      */
