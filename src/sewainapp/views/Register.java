@@ -33,13 +33,13 @@ public class Register extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        nama = new javax.swing.JTextField();
+        namaField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        username = new javax.swing.JTextField();
-        umur = new javax.swing.JTextField();
-        email = new javax.swing.JTextField();
-        nomorhp = new javax.swing.JTextField();
-        password = new javax.swing.JPasswordField();
+        usernameField = new javax.swing.JTextField();
+        umurField = new javax.swing.JTextField();
+        emailField = new javax.swing.JTextField();
+        nomorhpField = new javax.swing.JTextField();
+        passwordField = new javax.swing.JPasswordField();
         daftarButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         masukButton = new javax.swing.JButton();
@@ -112,12 +112,13 @@ public class Register extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(13, 16, 23));
 
-        nama.setBackground(new java.awt.Color(13, 16, 23));
-        nama.setForeground(new java.awt.Color(255, 255, 255));
-        nama.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nama", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Liberation Sans", 0, 15), new java.awt.Color(255, 255, 255))); // NOI18N
-        nama.addActionListener(new java.awt.event.ActionListener() {
+        namaField.setBackground(new java.awt.Color(13, 16, 23));
+        namaField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        namaField.setForeground(new java.awt.Color(255, 255, 255));
+        namaField.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), "Nama", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 10), new java.awt.Color(255, 255, 255))); // NOI18N
+        namaField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                namaActionPerformed(evt);
+                namaFieldActionPerformed(evt);
             }
         });
 
@@ -125,45 +126,50 @@ public class Register extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Daftarkan Akunmu");
 
-        username.setBackground(new java.awt.Color(13, 16, 23));
-        username.setForeground(new java.awt.Color(255, 255, 255));
-        username.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Username", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Liberation Sans", 0, 15), new java.awt.Color(255, 255, 255))); // NOI18N
-        username.addActionListener(new java.awt.event.ActionListener() {
+        usernameField.setBackground(new java.awt.Color(13, 16, 23));
+        usernameField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        usernameField.setForeground(new java.awt.Color(255, 255, 255));
+        usernameField.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), "Username", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 10), new java.awt.Color(255, 255, 255))); // NOI18N
+        usernameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usernameActionPerformed(evt);
+                usernameFieldActionPerformed(evt);
             }
         });
 
-        umur.setBackground(new java.awt.Color(13, 16, 23));
-        umur.setForeground(new java.awt.Color(255, 255, 255));
-        umur.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Umur", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Liberation Sans", 0, 15), new java.awt.Color(255, 255, 255))); // NOI18N
-        umur.addActionListener(new java.awt.event.ActionListener() {
+        umurField.setBackground(new java.awt.Color(13, 16, 23));
+        umurField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        umurField.setForeground(new java.awt.Color(255, 255, 255));
+        umurField.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), "Umur", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 10), new java.awt.Color(255, 255, 255))); // NOI18N
+        umurField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                umurActionPerformed(evt);
+                umurFieldActionPerformed(evt);
             }
         });
 
-        email.setBackground(new java.awt.Color(13, 16, 23));
-        email.setForeground(new java.awt.Color(255, 255, 255));
-        email.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Email", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Liberation Sans", 0, 15), new java.awt.Color(255, 255, 255))); // NOI18N
-        email.addActionListener(new java.awt.event.ActionListener() {
+        emailField.setBackground(new java.awt.Color(13, 16, 23));
+        emailField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        emailField.setForeground(new java.awt.Color(255, 255, 255));
+        emailField.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), "Email", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 10), new java.awt.Color(255, 255, 255))); // NOI18N
+        emailField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailActionPerformed(evt);
+                emailFieldActionPerformed(evt);
             }
         });
 
-        nomorhp.setBackground(new java.awt.Color(13, 16, 23));
-        nomorhp.setForeground(new java.awt.Color(255, 255, 255));
-        nomorhp.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nomor HP", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Liberation Sans", 0, 15), new java.awt.Color(255, 255, 255))); // NOI18N
-        nomorhp.addActionListener(new java.awt.event.ActionListener() {
+        nomorhpField.setBackground(new java.awt.Color(13, 16, 23));
+        nomorhpField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        nomorhpField.setForeground(new java.awt.Color(255, 255, 255));
+        nomorhpField.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), "Nomor HP", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 10), new java.awt.Color(255, 255, 255))); // NOI18N
+        nomorhpField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nomorhpActionPerformed(evt);
+                nomorhpFieldActionPerformed(evt);
             }
         });
 
-        password.setBackground(new java.awt.Color(13, 16, 23));
-        password.setForeground(new java.awt.Color(255, 255, 255));
-        password.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Password", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Liberation Sans", 0, 15), new java.awt.Color(255, 255, 255))); // NOI18N
+        passwordField.setBackground(new java.awt.Color(13, 16, 23));
+        passwordField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        passwordField.setForeground(new java.awt.Color(255, 255, 255));
+        passwordField.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), "Password", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 10), new java.awt.Color(255, 255, 255))); // NOI18N
 
         daftarButton.setBackground(new java.awt.Color(86, 211, 100));
         daftarButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -198,12 +204,12 @@ public class Register extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(nama, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(umur, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nomorhp, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(namaField, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(usernameField, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(umurField, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nomorhpField, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(64, 64, 64))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -220,17 +226,17 @@ public class Register extends javax.swing.JFrame {
                 .addGap(82, 82, 82)
                 .addComponent(jLabel1)
                 .addGap(30, 30, 30)
-                .addComponent(nama, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(namaField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(username, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(usernameField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(umur, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(umurField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(emailField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(nomorhp, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nomorhpField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(passwordField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(daftarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
@@ -258,25 +264,25 @@ public class Register extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void namaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaActionPerformed
+    private void namaFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_namaActionPerformed
+    }//GEN-LAST:event_namaFieldActionPerformed
 
-    private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
+    private void usernameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_usernameActionPerformed
+    }//GEN-LAST:event_usernameFieldActionPerformed
 
-    private void umurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_umurActionPerformed
+    private void umurFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_umurFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_umurActionPerformed
+    }//GEN-LAST:event_umurFieldActionPerformed
 
-    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
+    private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_emailActionPerformed
+    }//GEN-LAST:event_emailFieldActionPerformed
 
-    private void nomorhpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomorhpActionPerformed
+    private void nomorhpFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomorhpFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nomorhpActionPerformed
+    }//GEN-LAST:event_nomorhpFieldActionPerformed
 
     private void masukButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_masukButtonActionPerformed
         // TODO add your handling code here:
@@ -329,7 +335,7 @@ public class Register extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton daftarButton;
-    private javax.swing.JTextField email;
+    private javax.swing.JTextField emailField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -340,10 +346,10 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JButton masukButton;
-    private javax.swing.JTextField nama;
-    private javax.swing.JTextField nomorhp;
-    private javax.swing.JPasswordField password;
-    private javax.swing.JTextField umur;
-    private javax.swing.JTextField username;
+    private javax.swing.JTextField namaField;
+    private javax.swing.JTextField nomorhpField;
+    private javax.swing.JPasswordField passwordField;
+    private javax.swing.JTextField umurField;
+    private javax.swing.JTextField usernameField;
     // End of variables declaration//GEN-END:variables
 }
