@@ -117,7 +117,9 @@ public class ListAir extends javax.swing.JFrame {
 
     private void sewaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaButtonActionPerformed
         // TODO add your handling code here:
-        
+        Penyewaan editPopup = new Penyewaan();
+        editPopup.setVisible(true);
+        dispose();
     }//GEN-LAST:event_sewaButtonActionPerformed
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
