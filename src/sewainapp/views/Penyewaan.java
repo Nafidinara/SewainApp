@@ -4,7 +4,11 @@
  */
 package sewainapp.views;
 
+import java.util.Date;
 import java.util.Map;
+import sewainapp.models.domains.PenyewaanDomain;
+import sewainapp.models.entities.Kendaraan;
+import static sewainapp.views.Login.GLOBAL_USER;
 
 /**
  *
@@ -13,6 +17,8 @@ import java.util.Map;
 public class Penyewaan extends javax.swing.JFrame {
     
     protected Map<String, Object> kendaraan;
+    Kendaraan kendaraanModel = new Kendaraan() {};
+    
 
     /**
      * Creates new form Penyewaan
@@ -27,6 +33,11 @@ public class Penyewaan extends javax.swing.JFrame {
         jLabel8.setText((String) String.valueOf(this.kendaraan.get("harga")));
         jLabel16.setText((String) this.kendaraan.get("jenis"));
         jLabel17.setText((String) this.kendaraan.get("tahunPembuatan"));
+        
+        this.kendaraanModel.setId((int) this.kendaraan.get("id"));
+        this.kendaraanModel.setNama((String) this.kendaraan.get("nama"));
+        this.kendaraanModel.setHarga((int) this.kendaraan.get("harga"));
+        this.kendaraanModel.setJenis((String) this.kendaraan.get("jenis"));
     }
 
     /**
@@ -323,7 +334,20 @@ public class Penyewaan extends javax.swing.JFrame {
 
     private void bayarPenyewaanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarPenyewaanActionPerformed
         // TODO add your handling code here:
-        Pembayaran pay = new Pembayaran();
+        Date start = (Date) startDate.getValue();
+        Date end = (Date) endDate.getValue();
+        
+        PenyewaanDomain penyewaanDomain = new PenyewaanDomain(
+                start,
+                end,
+                String.valueOf(2),
+                this.kendaraanModel,
+                null,
+                GLOBAL_USER,
+                true
+        );
+        
+        Pembayaran pay = new Pembayaran(penyewaanDomain);
         pay.setVisible(true);
         dispose();
     }//GEN-LAST:event_bayarPenyewaanActionPerformed
@@ -334,6 +358,7 @@ public class Penyewaan extends javax.swing.JFrame {
 
     private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
         // TODO add your handling code here:
+        
         HomePage editPopup = new HomePage();
         editPopup.setVisible(true);
         dispose();

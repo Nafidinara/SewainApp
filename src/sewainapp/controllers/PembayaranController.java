@@ -6,7 +6,7 @@ package sewainapp.controllers;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import sewainapp.models.domains.Pembayaran;
+import sewainapp.models.domains.PembayaranDomain;
 import sewainapp.services.DatabaseService;
 
 /**
@@ -16,7 +16,7 @@ import sewainapp.services.DatabaseService;
 public class PembayaranController {
     protected final String tableName = "pembayaran";
     
-    public void create(Pembayaran pembayaran) throws SQLException{
+    public int create(PembayaranDomain pembayaran) throws SQLException{
         DatabaseService db = new DatabaseService();
         String sqlUpdate = "INSERT INTO "+tableName+" (metode, jumlah, status, denda) VALUES ('"
                 + "" + pembayaran.getMetodePembayaran() + "',"
@@ -24,10 +24,10 @@ public class PembayaranController {
                 + "'" + pembayaran.isStatusPembayaran() + "',"
                 + "'" + pembayaran.getDenda() + "')";
         
-        db.executeUpdate(sqlUpdate);
+        return db.executeUpdate(sqlUpdate);
     }
     
-    public void update(Pembayaran pembayaran) throws SQLException{
+    public void update(PembayaranDomain pembayaran) throws SQLException{
         DatabaseService db = new DatabaseService();
         String sqlUpdate = "UPDATE "+tableName+" SET "
                 + "tglSewa='" + pembayaran.getMetodePembayaran() + "',"

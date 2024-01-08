@@ -891,7 +891,7 @@ public class HomePage extends javax.swing.JFrame {
     private void sewaTeslaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaTeslaActionPerformed
         try {
             // TODO add your handling code here:
-            Map<String, Object> kendaraan = this.kendaraanController.show(1);
+            Map<String, Object> kendaraan = this.kendaraanController.show(9);
             
             if(kendaraan != null){
                 Mobil mobil = new Mobil();

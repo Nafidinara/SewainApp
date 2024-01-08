@@ -6,7 +6,7 @@ package sewainapp.controllers;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import sewainapp.models.domains.Penyewaan;
+import sewainapp.models.domains.PenyewaanDomain;
 import sewainapp.services.DatabaseService;
 
 /**
@@ -17,7 +17,7 @@ public class PenyewaanController {
     
     protected final String tableName = "penyewaan";
     
-    public void create(Penyewaan penyewaan) throws SQLException{
+    public void create(PenyewaanDomain penyewaan) throws SQLException{
         DatabaseService db = new DatabaseService();
         String sqlUpdate = "INSERT INTO "+tableName+" (tglSewa, tglKembali, lamaSewa, status, kendaraan_id, pembayaran_id, user_id) VALUES ('"
                 + "" + penyewaan.getTglSewa() + "',"
@@ -31,7 +31,7 @@ public class PenyewaanController {
         db.executeUpdate(sqlUpdate);
     }
     
-    public void update(Penyewaan penyewaan) throws SQLException{
+    public void update(PenyewaanDomain penyewaan) throws SQLException{
         DatabaseService db = new DatabaseService();
         String sqlUpdate = "UPDATE "+tableName+" SET "
                 + "tglSewa='" + penyewaan.getTglSewa() + "',"

@@ -8,7 +8,7 @@ package sewainapp.models.domains;
  *
  * @author nafidinara
  */
-public class Pembayaran {
+public class PembayaranDomain {
     private String metodePembayaran;
     private boolean statusPembayaran;
     private int jumlahPembayaran;

@@ -4,6 +4,16 @@
  */
 package sewainapp.views;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import sewainapp.controllers.PembayaranController;
+import sewainapp.controllers.PenyewaanController;
+import sewainapp.models.domains.PembayaranDomain;
+import sewainapp.models.domains.PenyewaanDomain;
+import sewainapp.services.Helper;
+
 /**
  *
  * @author arizi
@@ -13,8 +23,17 @@ public class Pembayaran extends javax.swing.JFrame {
     /**
      * Creates new form Pembayaran
      */
-    public Pembayaran() {
+    PenyewaanDomain penyewaanDomain;
+    PembayaranController pembayaranController;
+    PenyewaanController penyewaanController;
+    Helper helper;
+    
+    public Pembayaran(PenyewaanDomain penyewaanDomain) {
         initComponents();
+        this.penyewaanDomain = penyewaanDomain;
+        this.pembayaranController = new PembayaranController();
+        this.penyewaanController = new PenyewaanController();
+        this.helper = new Helper();
     }
 
     /**
@@ -359,6 +378,35 @@ public class Pembayaran extends javax.swing.JFrame {
         if (checkSnK.isSelected()){
             bayarButton.setEnabled(true);
         }
+        
+        PembayaranDomain pembayaranDomain = new PembayaranDomain();
+        
+        pembayaranDomain.setDenda(0);
+        pembayaranDomain.setJumlahPembayaran(this.penyewaanDomain.getKendaraan().getHarga());
+        pembayaranDomain.setMetodePembayaran("tunai");
+        pembayaranDomain.setStatusPembayaran(true);
+        
+        this.penyewaanDomain.setPembayaran(pembayaranDomain);
+        
+        int res, res2;
+        try {
+            res = this.pembayaranController.create(pembayaranDomain);
+            if(res > 0){
+                res2 = this.penyewaanController.create(this.penyewaanDomain);
+                if(res2 > 0){
+                    helper.showMessageDialog("Berhasil", "Berhasil melakukan pemesanan", 0);
+                    HomePage editPopup = new HomePage();
+                    editPopup.setVisible(true);
+                    dispose();
+                }else{
+                    JOptionPane.showMessageDialog(null, "Error : gagal register", "Communication Error", JOptionPane.WARNING_MESSAGE);
+                }
+            }else{
+                JOptionPane.showMessageDialog(null, "Error : gagal register", "Communication Error", JOptionPane.WARNING_MESSAGE);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Pembayaran.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_bayarButtonActionPerformed
 
     private void checkSnKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkSnKActionPerformed
@@ -408,7 +456,7 @@ public class Pembayaran extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Pembayaran().setVisible(true);
+//                new Pembayaran().setVisible(true);
             }
         });
     }

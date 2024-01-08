@@ -11,12 +11,12 @@ import sewainapp.models.entities.Kendaraan;
  *
  * @author nafidinara
  */
-public class Penyewaan {
+public class PenyewaanDomain {
     private Date tglSewa;
     private Date tglKembali;
     private String lamaSewa;
     private Kendaraan kendaraan;
-    private Pembayaran pembayaran;
+    private PembayaranDomain pembayaran;
     private User penyewa;
     private boolean status;
     private int id;
@@ -29,7 +29,7 @@ public class Penyewaan {
         this.id = id;
     }
 
-    public Penyewaan(Date tglSewa, Date tglKembali, String lamaSewa, Kendaraan kendaraan, Pembayaran pembayaran, User penyewa, boolean status) {
+    public PenyewaanDomain(Date tglSewa, Date tglKembali, String lamaSewa, Kendaraan kendaraan, PembayaranDomain pembayaran, User penyewa, boolean status) {
         this.tglSewa = tglSewa;
         this.tglKembali = tglKembali;
         this.lamaSewa = lamaSewa;
@@ -73,11 +73,11 @@ public class Penyewaan {
         this.kendaraan = kendaraan;
     }
 
-    public Pembayaran getPembayaran() {
+    public PembayaranDomain getPembayaran() {
         return pembayaran;
     }
 
-    public void setPembayaran(Pembayaran pembayaran) {
+    public void setPembayaran(PembayaranDomain pembayaran) {
         this.pembayaran = pembayaran;
     }
 
