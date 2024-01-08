@@ -13,18 +13,18 @@ import sewainapp.repositories.KendaraanInterface;
  */
 public class JetSki extends Kendaraan implements KendaraanInterface {
     
-    private String status;
+    private boolean status;
     
     
 
     @Override
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
     
 
     @Override
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 }

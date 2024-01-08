@@ -13,7 +13,7 @@ import sewainapp.repositories.KendaraanInterface;
  */
 public class SpeedBoat extends Kendaraan implements KendaraanInterface {
     
-    private String status;
+    private boolean status;
     private int crew;
 
     public int getCrew() {
@@ -25,12 +25,12 @@ public class SpeedBoat extends Kendaraan implements KendaraanInterface {
     }
    
     @Override
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
     @Override
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
     

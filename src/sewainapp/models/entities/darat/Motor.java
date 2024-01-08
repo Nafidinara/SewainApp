@@ -12,16 +12,16 @@ import sewainapp.repositories.KendaraanInterface;
  * @author nafidinara
  */
 public class Motor extends Kendaraan implements KendaraanInterface {
-    private String status;
+    private boolean status;
     private boolean sopir;
 
     @Override
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
     @Override
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 

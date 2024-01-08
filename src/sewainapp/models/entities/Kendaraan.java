@@ -17,6 +17,7 @@ public abstract class Kendaraan {
     private String spesifikasi;
     private String persyaratan;
     private int id;
+    private String img;
 
     public int getId() {
         return id;
@@ -81,6 +82,15 @@ public abstract class Kendaraan {
     public void setPersyaratan(String persyaratan) {
         this.persyaratan = persyaratan;
     }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+    
     
     
 }

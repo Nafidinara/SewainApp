@@ -12,17 +12,17 @@ import sewainapp.repositories.KendaraanInterface;
  * @author nafidinara
  */
 public class Truk extends Kendaraan implements KendaraanInterface {
-    private String status;
+    private boolean status;
     private boolean sopir;
     private int jmlMuatan;
 
     @Override
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
     @Override
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 

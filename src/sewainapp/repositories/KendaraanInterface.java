@@ -9,6 +9,6 @@ package sewainapp.repositories;
  * @author nafidinara
  */
 public interface KendaraanInterface {
-    void setStatus(String status);
-    String getStatus();
+    void setStatus(boolean status);
+    boolean getStatus();
 }

@@ -6,6 +6,9 @@ package sewainapp.controllers;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+import sewainapp.models.entities.darat.Mobil;
 import sewainapp.services.DatabaseService;
 
 /**
@@ -124,13 +127,50 @@ public class KendaraanController {
         return rs;
     }
     
-    public ResultSet show(String id) throws SQLException{
+    public Map<String, Object> show(int id) throws SQLException{
         DatabaseService db = new DatabaseService();
         String sqlQuery = "SELECT * FROM "+tableName+" WHERE id = '" + id + "'";
         
         ResultSet rs = db.executeQuery(sqlQuery);
+        
+//        Mobil mobil = new Mobil();
+//        
+//        if(rs.next()){
+//            mobil.setId(rs.getInt("id"));
+//            mobil.setNama(rs.getString("nama"));
+//            mobil.setJenis(rs.getString("jenis"));
+//            mobil.setTahunPembuatan(rs.getString("tahunPembuatan"));
+//            mobil.setHarga(rs.getInt("harga"));
+//            mobil.setQuantity(rs.getInt("quantity"));
+//            mobil.setSpesifikasi(rs.getString("spesifikasi"));
+//            mobil.setPersyaratan(rs.getString("persyaratan"));
+//            mobil.setStatus(rs.getBoolean("status"));
+////            mobil.setCrew(rs.getInt("crew"));
+//            mobil.setSopir(rs.getBoolean("sopir"));
+////            mobil.setJmlMuatan(rs.getInt("jmlMuatan"));
+//            mobil.setImg(rs.getString("img"));
+//        }
+        
+        if (rs.next()) {
+                Map<String, Object> kendaraan = new HashMap<>();
+                kendaraan.put("id", rs.getInt("id"));
+                kendaraan.put("nama", rs.getString("nama"));
+                kendaraan.put("jenis", rs.getString("jenis"));
+                kendaraan.put("tahunPembuatan", rs.getString("tahunPembuatan"));
+                kendaraan.put("harga", rs.getInt("harga"));
+                kendaraan.put("quantity", rs.getInt("quantity"));
+                kendaraan.put("spesifikasi", rs.getString("spesifikasi"));
+                kendaraan.put("persyaratan", rs.getString("persyaratan"));
+                kendaraan.put("status", rs.getBoolean("status"));
+                 kendaraan.put("crew", rs.getInt("crew"));
+                kendaraan.put("sopir", rs.getBoolean("sopir"));
+                 kendaraan.put("jmlMuatan", rs.getInt("jmlMuatan"));
+                kendaraan.put("img", rs.getString("img"));
 
-        return rs;
+                return kendaraan;
+            }
+
+        return null;
     }
     
     public void delete(String id) throws SQLException{

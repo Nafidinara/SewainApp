@@ -4,6 +4,14 @@
  */
 package sewainapp.views;
 
+import java.sql.SQLException;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import sewainapp.controllers.KendaraanController;
+import sewainapp.models.entities.darat.Mobil;
+import sewainapp.models.entities.darat.Motor;
+
 /**
  *
  * @author nafidinara
@@ -14,7 +22,9 @@ public class HomePage extends javax.swing.JFrame {
     /**
      * Creates new form HomePage
      */
+    KendaraanController kendaraanController;
     public HomePage() {
+        this.kendaraanController = new KendaraanController();
         initComponents();
     }
     
@@ -447,17 +457,14 @@ public class HomePage extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(sewaJetSki)
-                        .addGap(23, 23, 23))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(LabelJetski)
-                        .addGap(37, 37, 37))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(sewaJetSki))
+                    .addComponent(LabelJetski))
+                .addGap(23, 23, 23))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -785,7 +792,7 @@ public class HomePage extends javax.swing.JFrame {
                         .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(panelUdara, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         TabHome.addTab("Home", jPanel2);
@@ -830,17 +837,18 @@ public class HomePage extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(TabHome))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(TabHome)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(TabHome))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -881,24 +889,107 @@ public class HomePage extends javax.swing.JFrame {
     }//GEN-LAST:event_panelUdaraMouseClicked
 
     private void sewaTeslaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaTeslaActionPerformed
-        // TODO add your handling code here:
-        Penyewaan Tsl = new Penyewaan();
-        Tsl.setVisible(true);
-        dispose();
+        try {
+            // TODO add your handling code here:
+            Map<String, Object> kendaraan = this.kendaraanController.show(1);
+            
+            if(kendaraan != null){
+                Mobil mobil = new Mobil();
+                mobil.setNama((String) kendaraan.get("nama"));
+                mobil.setId((int) kendaraan.get("id"));
+                mobil.setNama((String) kendaraan.get("nama"));
+                mobil.setJenis((String) kendaraan.get("jenis"));
+                mobil.setTahunPembuatan((String) kendaraan.get("tahunPembuatan"));
+                mobil.setHarga((int) kendaraan.get("harga"));
+                mobil.setQuantity((int) kendaraan.get("quantity"));
+                mobil.setSpesifikasi((String) kendaraan.get("spesifikasi"));
+                mobil.setPersyaratan((String) kendaraan.get("persyaratan"));
+                mobil.setStatus((boolean) kendaraan.get("status"));
+//    //            mobil.setCrew(rs.getInt("crew"));
+                mobil.setSopir((boolean) kendaraan.get("sopir"));
+//    //            mobil.setJmlMuatan(rs.getInt("jmlMuatan"));
+                mobil.setImg((String) kendaraan.get("img"));
+                
+                Penyewaan Tsl = new Penyewaan(kendaraan);
+                Tsl.setVisible(true);
+                dispose();
+            }else{
+                
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(HomePage.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_sewaTeslaActionPerformed
 
     private void sewaFerrariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaFerrariActionPerformed
         // TODO add your handling code here:
-        Penyewaan Fer = new Penyewaan();
-        Fer.setVisible(true);
-        dispose();
+        try {
+            // TODO add your handling code here:
+            Map<String, Object> kendaraan = this.kendaraanController.show(2);
+            
+            if(kendaraan != null){
+                Mobil mobil = new Mobil();
+                mobil.setNama((String) kendaraan.get("nama"));
+                mobil.setId((int) kendaraan.get("id"));
+                mobil.setNama((String) kendaraan.get("nama"));
+                mobil.setJenis((String) kendaraan.get("jenis"));
+                mobil.setTahunPembuatan((String) kendaraan.get("tahunPembuatan"));
+                mobil.setHarga((int) kendaraan.get("harga"));
+                mobil.setQuantity((int) kendaraan.get("quantity"));
+                mobil.setSpesifikasi((String) kendaraan.get("spesifikasi"));
+                mobil.setPersyaratan((String) kendaraan.get("persyaratan"));
+                mobil.setStatus((boolean) kendaraan.get("status"));
+//    //            mobil.setCrew(rs.getInt("crew"));
+                mobil.setSopir((boolean) kendaraan.get("sopir"));
+//    //            mobil.setJmlMuatan(rs.getInt("jmlMuatan"));
+                mobil.setImg((String) kendaraan.get("img"));
+                
+                Penyewaan Tsl = new Penyewaan(kendaraan);
+                Tsl.setVisible(true);
+                dispose();
+            }else{
+                
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(HomePage.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_sewaFerrariActionPerformed
 
     private void sewaKawazakiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaKawazakiActionPerformed
         // TODO add your handling code here:
-        Penyewaan Kwz = new Penyewaan();
-        Kwz.setVisible(true);
-        dispose();
+        try {
+            // TODO add your handling code here:
+            Map<String, Object> kendaraan = this.kendaraanController.show(2);
+            
+            if(kendaraan != null){
+                Motor motor = new Motor();
+                motor.setNama((String) kendaraan.get("nama"));
+                motor.setId((int) kendaraan.get("id"));
+                motor.setNama((String) kendaraan.get("nama"));
+                motor.setJenis((String) kendaraan.get("jenis"));
+                motor.setTahunPembuatan((String) kendaraan.get("tahunPembuatan"));
+                motor.setHarga((int) kendaraan.get("harga"));
+                motor.setQuantity((int) kendaraan.get("quantity"));
+                motor.setSpesifikasi((String) kendaraan.get("spesifikasi"));
+                motor.setPersyaratan((String) kendaraan.get("persyaratan"));
+                motor.setStatus((boolean) kendaraan.get("status"));
+//    //            mobil.setCrew(rs.getInt("crew"));
+                motor.setSopir((boolean) kendaraan.get("sopir"));
+//    //            mobil.setJmlMuatan(rs.getInt("jmlMuatan"));
+                motor.setImg((String) kendaraan.get("img"));
+                
+                Penyewaan Tsl = new Penyewaan(kendaraan);
+                Tsl.setVisible(true);
+                dispose();
+            }else{
+                
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(HomePage.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_sewaKawazakiActionPerformed
 
     private void sewaYachtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaYachtActionPerformed

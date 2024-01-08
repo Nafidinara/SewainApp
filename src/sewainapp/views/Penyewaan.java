@@ -4,17 +4,29 @@
  */
 package sewainapp.views;
 
+import java.util.Map;
+
 /**
  *
  * @author arizi
  */
 public class Penyewaan extends javax.swing.JFrame {
+    
+    protected Map<String, Object> kendaraan;
 
     /**
      * Creates new form Penyewaan
+     * @param kendaraan
      */
-    public Penyewaan() {
+    public Penyewaan(Map<String, Object> kendaraan) {
+        this.kendaraan = kendaraan;
         initComponents();
+        
+        jLabel2.setText((String) this.kendaraan.get("nama"));
+        jLabel4.setText((String) this.kendaraan.get("spesifikasi"));
+        jLabel8.setText((String) String.valueOf(this.kendaraan.get("harga")));
+        jLabel16.setText((String) this.kendaraan.get("jenis"));
+        jLabel17.setText((String) this.kendaraan.get("tahunPembuatan"));
     }
 
     /**
@@ -184,13 +196,13 @@ public class Penyewaan extends javax.swing.JFrame {
         jLabel3.setText("Model : ");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setText("Warna :");
+        jLabel5.setText("harga :");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel6.setText("Tahun Pembuatan :");
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel7.setText("Merk:");
+        jLabel7.setText("jenis");
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel14.setText("Spesifikasi : ");
@@ -358,7 +370,7 @@ public class Penyewaan extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Penyewaan().setVisible(true);
+//                new Penyewaan().setVisible(true);
             }
         });
     }
