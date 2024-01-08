@@ -56,5 +56,11 @@ public class UserController {
             }
     }
     
-    //kurang logout
+    public void logout(String username) throws SQLException {
+        DatabaseService db = new DatabaseService();
+        // Assuming you're using a session table to track logged-in users
+        String sql = "DELETE FROM sessions WHERE username = '" + username + "'";
+        db.executeUpdate(sql);
+    }
+    
 }
