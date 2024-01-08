@@ -17,18 +17,18 @@ public class PenyewaanController {
     
     protected final String tableName = "penyewaan";
     
-    public void create(PenyewaanDomain penyewaan) throws SQLException{
+    public int create(PenyewaanDomain penyewaan) throws SQLException{
         DatabaseService db = new DatabaseService();
         String sqlUpdate = "INSERT INTO "+tableName+" (tglSewa, tglKembali, lamaSewa, status, kendaraan_id, pembayaran_id, user_id) VALUES ('"
                 + "" + penyewaan.getTglSewa() + "',"
                 + "'" + penyewaan.getTglKembali() + "',"
                 + "'" + penyewaan.getLamaSewa() + "',"
-                + "'" + penyewaan.isStatus() + "',"
+                + "'" + 1 + "',"
                 + "'" + penyewaan.getKendaraan().getId() + "',"
                 + "'" + penyewaan.getPembayaran().getId() + "',"
                 + "'" + penyewaan.getPenyewa().getId() + "')";
         
-        db.executeUpdate(sqlUpdate);
+        return db.executeUpdate(sqlUpdate);
     }
     
     public void update(PenyewaanDomain penyewaan) throws SQLException{

@@ -9,6 +9,8 @@ package sewainapp.models.domains;
  * @author nafidinara
  */
 public class User {
+
+    public static User GLOBAL_USER;
     private String nama;
     private String umur;
     private String nohp;

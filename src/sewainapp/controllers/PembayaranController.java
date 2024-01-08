@@ -21,7 +21,7 @@ public class PembayaranController {
         String sqlUpdate = "INSERT INTO "+tableName+" (metode, jumlah, status, denda) VALUES ('"
                 + "" + pembayaran.getMetodePembayaran() + "',"
                 + "'" + pembayaran.getJumlahPembayaran() + "',"
-                + "'" + pembayaran.isStatusPembayaran() + "',"
+                + "'" + 1 + "',"
                 + "'" + pembayaran.getDenda() + "')";
         
         return db.executeUpdate(sqlUpdate);

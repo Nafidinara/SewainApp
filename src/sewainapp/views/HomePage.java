@@ -930,7 +930,7 @@ public class HomePage extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             // TODO add your handling code here:
-            Map<String, Object> kendaraan = this.kendaraanController.show(2);
+            Map<String, Object> kendaraan = this.kendaraanController.show(21);
             
             if(kendaraan != null){
                 Mobil mobil = new Mobil();
@@ -965,7 +965,7 @@ public class HomePage extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             // TODO add your handling code here:
-            Map<String, Object> kendaraan = this.kendaraanController.show(2);
+            Map<String, Object> kendaraan = this.kendaraanController.show(33);
             
             if(kendaraan != null){
                 Motor motor = new Motor();

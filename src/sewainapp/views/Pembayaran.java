@@ -34,6 +34,11 @@ public class Pembayaran extends javax.swing.JFrame {
         this.pembayaranController = new PembayaranController();
         this.penyewaanController = new PenyewaanController();
         this.helper = new Helper();
+        jenisKendaraan.setText(this.penyewaanDomain.getKendaraan().getJenis());
+        namaModel.setText(this.penyewaanDomain.getKendaraan().getNama());
+        subtotal.setText(String.valueOf(this.penyewaanDomain.getKendaraan().getHarga()));
+        totalHarga.setText(String.valueOf(this.penyewaanDomain.getKendaraan().getHarga()));
+        harga.setText(String.valueOf(this.penyewaanDomain.getKendaraan().getHarga()));
     }
 
     /**
@@ -58,19 +63,19 @@ public class Pembayaran extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        namaModel = new javax.swing.JLabel();
+        jenisKendaraan = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        harga = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        subtotal = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        totalHarga = new javax.swing.JLabel();
         bayarButton = new javax.swing.JButton();
         checkSnK = new javax.swing.JCheckBox();
 
@@ -186,17 +191,17 @@ public class Pembayaran extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel6.setText("Nama Model");
+        namaModel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        namaModel.setText("Nama Model");
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel7.setText("Jenis Kendaraan");
+        jenisKendaraan.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jenisKendaraan.setText("Jenis Kendaraan");
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel8.setText("Rp");
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel9.setText("Harga");
+        harga.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        harga.setText("Harga");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -206,14 +211,14 @@ public class Pembayaran extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
+                        .addComponent(jenisKendaraan)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
+                        .addComponent(namaModel)
                         .addGap(178, 178, 178)
                         .addComponent(jLabel8)
                         .addGap(18, 18, Short.MAX_VALUE)
-                        .addComponent(jLabel9)
+                        .addComponent(harga)
                         .addGap(147, 147, 147))))
         );
         jPanel3Layout.setVerticalGroup(
@@ -222,14 +227,14 @@ public class Pembayaran extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jLabel6))
+                        .addComponent(namaModel))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(41, 41, 41)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
-                            .addComponent(jLabel9))))
+                            .addComponent(harga))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(jenisKendaraan)
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -245,8 +250,8 @@ public class Pembayaran extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel5.setText("Jumlah");
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel10.setText("Harga");
+        subtotal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        subtotal.setText("Harga");
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel11.setText("Rp");
@@ -257,8 +262,8 @@ public class Pembayaran extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel13.setText("Rp");
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel14.setText("Total Harga");
+        totalHarga.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        totalHarga.setText("Total Harga");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -274,7 +279,7 @@ public class Pembayaran extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel14))
+                        .addComponent(totalHarga))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -282,7 +287,7 @@ public class Pembayaran extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(subtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(45, 45, 45))
         );
         jPanel4Layout.setVerticalGroup(
@@ -291,7 +296,7 @@ public class Pembayaran extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel10)
+                    .addComponent(subtotal)
                     .addComponent(jLabel11))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -301,7 +306,7 @@ public class Pembayaran extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel14))
+                    .addComponent(totalHarga))
                 .addContainerGap(37, Short.MAX_VALUE))
         );
 
@@ -388,21 +393,23 @@ public class Pembayaran extends javax.swing.JFrame {
         
         this.penyewaanDomain.setPembayaran(pembayaranDomain);
         
-        int res, res2;
+        int res;
+        int res2;
+        
         try {
             res = this.pembayaranController.create(pembayaranDomain);
             if(res > 0){
-                res2 = this.penyewaanController.create(this.penyewaanDomain);
+                res2 = this.penyewaanController.create(penyewaanDomain);
                 if(res2 > 0){
                     helper.showMessageDialog("Berhasil", "Berhasil melakukan pemesanan", 0);
                     HomePage editPopup = new HomePage();
                     editPopup.setVisible(true);
                     dispose();
                 }else{
-                    JOptionPane.showMessageDialog(null, "Error : gagal register", "Communication Error", JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Error : gagal input penyewaan", "Communication Error", JOptionPane.WARNING_MESSAGE);
                 }
             }else{
-                JOptionPane.showMessageDialog(null, "Error : gagal register", "Communication Error", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Error : gagal input pembayaran", "Communication Error", JOptionPane.WARNING_MESSAGE);
             }
         } catch (SQLException ex) {
             Logger.getLogger(Pembayaran.class.getName()).log(Level.SEVERE, null, ex);
@@ -465,20 +472,16 @@ public class Pembayaran extends javax.swing.JFrame {
     private javax.swing.JButton backButton;
     private javax.swing.JButton bayarButton;
     private javax.swing.JCheckBox checkSnK;
+    private javax.swing.JLabel harga;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -490,5 +493,9 @@ public class Pembayaran extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JLabel jenisKendaraan;
+    private javax.swing.JLabel namaModel;
+    private javax.swing.JLabel subtotal;
+    private javax.swing.JLabel totalHarga;
     // End of variables declaration//GEN-END:variables
 }

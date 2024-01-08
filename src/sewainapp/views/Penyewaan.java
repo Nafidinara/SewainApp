@@ -7,8 +7,8 @@ package sewainapp.views;
 import java.util.Date;
 import java.util.Map;
 import sewainapp.models.domains.PenyewaanDomain;
+import static sewainapp.models.domains.User.GLOBAL_USER;
 import sewainapp.models.entities.Kendaraan;
-import static sewainapp.views.Login.GLOBAL_USER;
 
 /**
  *

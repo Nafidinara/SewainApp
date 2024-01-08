@@ -218,6 +218,7 @@ public class Login extends javax.swing.JFrame {
             );
             if(user != null){
                 this.helper.showMessageDialog("Berhasil login", "selamat datang "+user.getUsername()+" di SewainApp", 0);
+                User.GLOBAL_USER = user;
                 HomePage editPopup = new HomePage();
                 editPopup.setVisible(true);
                 dispose();
