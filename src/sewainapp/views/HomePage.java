@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import sewainapp.controllers.KendaraanController;
+import sewainapp.models.entities.air.JetSki;
+import sewainapp.models.entities.air.KapalFerry;
 import sewainapp.models.entities.darat.Mobil;
 import sewainapp.models.entities.darat.Motor;
 
@@ -994,44 +996,115 @@ public class HomePage extends javax.swing.JFrame {
 
     private void sewaYachtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaYachtActionPerformed
         // TODO add your handling code here:
-        Penyewaan Yach = new Penyewaan();
-        Yach.setVisible(true);
-        dispose();
+        try {
+            // TODO add your handling code here:
+            Map<String, Object> kendaraan = this.kendaraanController.show(41);
+            
+            if(kendaraan != null){
+                KapalFerry yacht = new KapalFerry();
+                yacht.setNama((String) kendaraan.get("nama"));
+                yacht.setId((int) kendaraan.get("id"));
+                yacht.setNama((String) kendaraan.get("nama"));
+                yacht.setJenis((String) kendaraan.get("jenis"));
+                yacht.setTahunPembuatan((String) kendaraan.get("tahunPembuatan"));
+                yacht.setHarga((int) kendaraan.get("harga"));
+                yacht.setQuantity((int) kendaraan.get("quantity"));
+                yacht.setSpesifikasi((String) kendaraan.get("spesifikasi"));
+                yacht.setPersyaratan((String) kendaraan.get("persyaratan"));
+                yacht.setStatus((boolean) kendaraan.get("status"));
+                yacht.setCrew((int) kendaraan.get("crew"));
+                yacht.setImg((String) kendaraan.get("img"));
+                
+                Penyewaan Tsl = new Penyewaan(kendaraan);
+                Tsl.setVisible(true);
+                dispose();
+            }else{
+                
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(HomePage.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_sewaYachtActionPerformed
 
     private void sewaJetSkiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetSkiActionPerformed
         // TODO add your handling code here:
-        Penyewaan Jet = new Penyewaan();
-        Jet.setVisible(true);
-        dispose();
+        try {
+            // TODO add your handling code here:
+            Map<String, Object> kendaraan = this.kendaraanController.show(31);
+            
+            if(kendaraan != null){
+                JetSki jetski = new JetSki();
+                jetski.setNama((String) kendaraan.get("nama"));
+                jetski.setId((int) kendaraan.get("id"));
+                jetski.setNama((String) kendaraan.get("nama"));
+                jetski.setJenis((String) kendaraan.get("jenis"));
+                jetski.setTahunPembuatan((String) kendaraan.get("tahunPembuatan"));
+                jetski.setHarga((int) kendaraan.get("harga"));
+                jetski.setQuantity((int) kendaraan.get("quantity"));
+                jetski.setSpesifikasi((String) kendaraan.get("spesifikasi"));
+                jetski.setPersyaratan((String) kendaraan.get("persyaratan"));
+                jetski.setStatus((boolean) kendaraan.get("status"));
+                jetski.setImg((String) kendaraan.get("img"));
+                
+                Penyewaan Tsl = new Penyewaan(kendaraan);
+                Tsl.setVisible(true);
+                dispose();
+            }else{
+                
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(HomePage.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_sewaJetSkiActionPerformed
 
     private void sewaCruiserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaCruiserActionPerformed
         // TODO add your handling code here:
-        Penyewaan Crui = new Penyewaan();
-        Crui.setVisible(true);
-        dispose();
+        try {
+            // TODO add your handling code here:
+            Map<String, Object> kendaraan = this.kendaraanController.show(10);
+            
+            if(kendaraan != null){
+                KapalFerry yacht = new KapalFerry();
+                yacht.setNama((String) kendaraan.get("nama"));
+                yacht.setId((int) kendaraan.get("id"));
+                yacht.setNama((String) kendaraan.get("nama"));
+                yacht.setJenis((String) kendaraan.get("jenis"));
+                yacht.setTahunPembuatan((String) kendaraan.get("tahunPembuatan"));
+                yacht.setHarga((int) kendaraan.get("harga"));
+                yacht.setQuantity((int) kendaraan.get("quantity"));
+                yacht.setSpesifikasi((String) kendaraan.get("spesifikasi"));
+                yacht.setPersyaratan((String) kendaraan.get("persyaratan"));
+                yacht.setStatus((boolean) kendaraan.get("status"));
+                yacht.setCrew((int) kendaraan.get("crew"));
+                yacht.setImg((String) kendaraan.get("img"));
+                
+                Penyewaan Tsl = new Penyewaan(kendaraan);
+                Tsl.setVisible(true);
+                dispose();
+            }else{
+                
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(HomePage.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_sewaCruiserActionPerformed
 
     private void sewaPrivateJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaPrivateJetActionPerformed
         // TODO add your handling code here:
-        Penyewaan Pri = new Penyewaan();
-        Pri.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_sewaPrivateJetActionPerformed
 
     private void sewaHeliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaHeliActionPerformed
         // TODO add your handling code here:
-        Penyewaan Pri = new Penyewaan();
-        Pri.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_sewaHeliActionPerformed
 
     private void sewaJetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sewaJetActionPerformed
         // TODO add your handling code here:
-        Penyewaan Jet1 = new Penyewaan();
-        Jet1.setVisible(true);
-        dispose();
+        
     }//GEN-LAST:event_sewaJetActionPerformed
 
     /**
