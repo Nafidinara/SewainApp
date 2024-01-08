@@ -4,6 +4,13 @@
  */
 package sewainapp.views;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import sewainapp.controllers.UserController;
+import sewainapp.models.domains.User;
+
 /**
  *
  * @author arizi
@@ -13,7 +20,9 @@ public class Register extends javax.swing.JFrame {
     /**
      * Creates new form Register
      */
+    private UserController userController;
     public Register() {
+        this.userController = new UserController();
         initComponents();
     }
 
@@ -170,6 +179,11 @@ public class Register extends javax.swing.JFrame {
         passwordField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         passwordField.setForeground(new java.awt.Color(255, 255, 255));
         passwordField.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)), "Password", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 10), new java.awt.Color(255, 255, 255))); // NOI18N
+        passwordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordFieldActionPerformed(evt);
+            }
+        });
 
         daftarButton.setBackground(new java.awt.Color(86, 211, 100));
         daftarButton.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -292,10 +306,33 @@ public class Register extends javax.swing.JFrame {
 
     private void daftarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarButtonActionPerformed
         // TODO add your handling code here:
-        Login editPopup = new Login();
-        editPopup.setVisible(true);
-        dispose();
+        String myPass = String.valueOf(passwordField.getPassword());
+        User user = new User(
+                namaField.getText(),
+                umurField.getText(),
+                nomorhpField.getText(),
+                emailField.getText(),
+                usernameField.getText(),
+                myPass
+        );
+        
+        try {
+            int res = this.userController.register(user);
+            if(res > 0){
+                Login editPopup = new Login();
+                editPopup.setVisible(true);
+                dispose();
+            }else{
+                JOptionPane.showMessageDialog(null, "Error : gagal register", "Communication Error", JOptionPane.WARNING_MESSAGE);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Register.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_daftarButtonActionPerformed
+
+    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordFieldActionPerformed
 
     /**
      * @param args the command line arguments

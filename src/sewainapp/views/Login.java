@@ -4,6 +4,13 @@
  */
 package sewainapp.views;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import sewainapp.controllers.UserController;
+import sewainapp.models.domains.User;
+import sewainapp.services.Helper;
+
 /**
  *
  * @author arizi
@@ -13,7 +20,12 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
+    UserController userController;
+    Helper helper;
+    
     public Login() {
+        this.userController = new UserController();
+        this.helper = new Helper();
         initComponents();
     }
 
@@ -198,10 +210,25 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_usernameFieldActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        // TODO add your handling code here:
-        HomePage editPopup = new HomePage();
-        editPopup.setVisible(true);
-        dispose();
+        try {
+            // TODO add your handling code here:
+            User user = this.userController.login(
+                    usernameField.getText(),
+                    String.valueOf(passwordField.getPassword())
+            );
+            if(user != null){
+                this.helper.showMessageDialog("Berhasil login", "selamat datang "+user.getUsername()+" di SewainApp", 0);
+                HomePage editPopup = new HomePage();
+                editPopup.setVisible(true);
+                dispose();
+            }else{
+                this.helper.showMessageDialog("Gagal login", "Password atau Username Salah", 2);
+            }
+            
+        } catch (SQLException ex) {
+            this.helper.showMessageDialog("Gagal login", "Password atau Username Salah", 2);
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed

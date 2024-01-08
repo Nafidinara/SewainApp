@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 public class DatabaseService {
     static final String DB_URL = "jdbc:mysql://localhost:3306/db_tubes";
     static final String DB_USER = "root";
-    static final String DB_PASS = "ichsan123";
+    static final String DB_PASS = "afara123";
     static Connection conn;
     static Statement stmt;
     static ResultSet rs;
@@ -41,12 +41,14 @@ public class DatabaseService {
         return rs;
     }
 
-    public void executeUpdate(String SQLString){
+    public int executeUpdate(String SQLString){
         try {
-            stmt.executeUpdate(SQLString);
+            int res = stmt.executeUpdate(SQLString);
             JOptionPane.showMessageDialog(null, "Success update data to DB!", "Success", JOptionPane.INFORMATION_MESSAGE);
+            return res;
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Error : " + e.getMessage(), "Communication Error", JOptionPane.WARNING_MESSAGE);
+            return 0;
         }
     }
 }
